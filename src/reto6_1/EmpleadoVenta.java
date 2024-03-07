@@ -31,7 +31,12 @@ public class  EmpleadoVenta extends Empleado{
 	public double getVentas() {
 		return Ventas;
 	}
+	
+	@Override
+	public String GetNombreCompleto(Empleado empleado) {
 
+		return "Empleado de Ventas : " + empleado.getNombre() + " " + empleado.getApellido();
+	}
 
 	/**
 	 * @param numeroVentas el numeroVentas a establecer

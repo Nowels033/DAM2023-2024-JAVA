@@ -45,7 +45,7 @@ public class LigaPokemon {
 
 		boolean finBatalla = false;
 
-		for (int i = 0; i < ligaPokemon.size(); i++) {
+		for (int i = 0; i < ligaPokemon.size()&&!finBatalla; i++) {
 			if (pokemonElegido.equalsIgnoreCase(ligaPokemon.get(i).getNombre())) {
 
 				for (int j = 0; j < ligaPokemon.size(); j++) {

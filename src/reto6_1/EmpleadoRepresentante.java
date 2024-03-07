@@ -42,6 +42,11 @@ public class EmpleadoRepresentante extends Empleado{
 		return 800+(getVentas()*20/100);
 	}
 	
+	@Override
+	public String GetNombreCompleto(Empleado empleado) {
+
+		return "Representante : " + empleado.getNombre() + " " + empleado.getApellido();
+	}
 
 
 }

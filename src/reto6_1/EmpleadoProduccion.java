@@ -30,6 +30,10 @@ public class EmpleadoProduccion extends Empleado{
 		this.unidadesProducidas = getUnidadesProducidas()+unidadesProducidas;
 	}
 
-	
+	@Override
+	public String GetNombreCompleto(Empleado empleado) {
+
+		return "Empleado de Producción : " + empleado.getNombre() + " " + empleado.getApellido();
+	}
 	
 }

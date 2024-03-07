@@ -1,9 +1,10 @@
 package reto6_1;
 
-public class EmpleadoMantenimiento extends Empleado{
-	
-	//Los empleados de mantenimiento. Su sueldo mensual es el número de horas trabajadas en el mes multiplicado por 5
-	
+public class EmpleadoMantenimiento extends Empleado {
+
+	// Los empleados de mantenimiento. Su sueldo mensual es el número de horas
+	// trabajadas en el mes multiplicado por 5
+
 	private double horasTrabajadas;
 
 	public EmpleadoMantenimiento(String nombre, String apellido, int edad) {
@@ -28,7 +29,13 @@ public class EmpleadoMantenimiento extends Empleado{
 	@Override
 	public double calcularSueldo() {
 		// TODO Esbozo de método generado automáticamente
-		return getHorasTrabajadas()*5;
+		return getHorasTrabajadas() * 5;
+	}
+	
+	@Override
+	public String GetNombreCompleto(Empleado empleado) {
+
+		return "Empleado de Mantenimiento : " + empleado.getNombre() + " " + empleado.getApellido();
 	}
 
 }
